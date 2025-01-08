@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #205081;
+    --color-text: white;
+    --color-text-black: black;
+    --color-background: white;
+}
+
+/*#####layout.tsx#####*/
+.popup {
+    background: var(--color-background) !important;
+    max-height: 34rem;
+    overflow-y: auto;
+    width: 35rem;
+}
+
+.body-popup {
+    min-width: 24rem;
+    max-width: 44rem;
+}
+
+small.badge {
+    border-radius: 57px;
+    color: #fff;
+    padding: 2px 4px;
+}
+
+.badge.info {
+    background-color: rgb(64, 120, 210);
+    font-weight: bold;
+}
+
+.badge.warning {
+    background-color: rgb(210, 135, 64);
+    font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input[type=text].input-control,
+select.input-control {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/*********************************/
+fieldset.no-border {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top-width: thin;
+}

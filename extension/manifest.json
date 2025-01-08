@@ -1,0 +1,25 @@
+{
+    "name": "JIRA",
+    "version": "0.0.0.2",
+    "manifest_version": 3,
+    "description": "A super extension.",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Open the popup"
+    },
+    "background": {
+        "service_worker": "assets/background.js"
+    },
+    "side_panel": {
+        "default_path": "index.html"
+    },
+    "permissions": [
+        "storage",
+        "sidePanel",
+        "contextMenus",
+        "alarms"
+    ],
+    "host_permissions": [
+        "http://tcqa.simplexity.com.co:8050/"
+    ]
+}

@@ -1,0 +1,11 @@
+.current-issue-caption {
+    font-size: 13px;
+}
+
+.current-issue-caption strong {
+    font-size: 14px;
+}
+
+p:not(:first-child) {
+    line-height: 1px;
+}

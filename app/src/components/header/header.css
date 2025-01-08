@@ -1,0 +1,15 @@
+.header {
+    background: var(--color-primary);
+    color: var(--color-text);
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.wrapper-text-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}

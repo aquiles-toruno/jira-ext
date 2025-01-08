@@ -1,0 +1,23 @@
+.issue:hover{
+    background-color: rgba(0, 0, 0, 0.039);
+}
+
+.issue .code {
+    color: blue;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.issue .code a{
+    text-decoration: none;
+}
+
+.issue .name {
+    font-size: 14px;
+    padding: 2px 4px;
+}
+
+.meta {
+    @apply pt-1 pb-1 pr-1 pl-1;
+    line-height: 16px;
+}
