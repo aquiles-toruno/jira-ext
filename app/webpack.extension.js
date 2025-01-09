@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, "../extension/assets"),
         filename: '[name].js',
         clean: true,
-        publicPath: 'assets/',
+        publicPath: '/assets/',
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
@@ -51,7 +51,14 @@ module.exports = {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
                 exclude: /\.module\.css$/,
-            }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext]', // Nombre del archivo en la carpeta de salida
+                },
+            },
         ],
     }
 }
