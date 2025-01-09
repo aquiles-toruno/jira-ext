@@ -75,7 +75,7 @@ export default function IssueDetail() {
     const { formatDate } = useJiraDate();
 
     useEffect(() => {
-        fetch(`http://tcqa.simplexity.com.co:8050/rest/api/2/issue/${code}`, {
+        fetch(`${process.env.REACT_APP_JIRA_BASE_URL}/rest/api/2/issue/${code}`, {
             headers: {
                 "Authorization": 'Basic ' + btoa(`${process.env.REACT_APP_JIRA_USER}:${process.env.REACT_APP_JIRA_PASS}`)
             }
