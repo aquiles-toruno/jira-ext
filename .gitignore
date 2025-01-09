@@ -30,9 +30,10 @@ coverage/
 .DS_Store
 
 # Miscellaneous
-.env
+.env*
 .env.local
 .history
+!.env.example
 
 # Archivos generados automaticamente al hacer el build 
 assets/

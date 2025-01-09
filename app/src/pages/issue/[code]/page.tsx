@@ -77,6 +77,7 @@ export default function IssueDetail() {
     useEffect(() => {
         fetch(`http://tcqa.simplexity.com.co:8050/rest/api/2/issue/${code}`, {
             headers: {
+                "Authorization": 'Basic ' + btoa(`${process.env.REACT_APP_JIRA_USER}:${process.env.REACT_APP_JIRA_PASS}`)
             }
         })
             .then((response) => {
