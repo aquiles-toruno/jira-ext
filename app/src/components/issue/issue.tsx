@@ -19,7 +19,7 @@ export default function Issue({ issue }: IssueProperties) {
         return className;
     }
 
-    return <div className="flex issue p-2">
+    return <div className="group/item flex issue p-2">
         <div className="flex-none w-10">
             <img src={issue.fields.project.avatarUrls['32x32']} alt="Project_Avatar" title={issue.fields.project.name} />
         </div>
@@ -49,6 +49,12 @@ export default function Issue({ issue }: IssueProperties) {
                     <img src={issue.fields.issuetype.iconUrl} alt="IssueType" title={issue.fields.issuetype.name} />
                 </span>
             </div>
+        </div>
+        <div className="flex-auto">
+            <a className="group/edit invisible hover:bg-slate-200 group-hover/item:visible ..." href="tel:{person.phone}">
+                <span className="group-hover/edit:text-gray-700 ...">Call</span>
+                <i className="fa-solid fa-camera"></i>
+            </a>
         </div>
     </div >
 }
